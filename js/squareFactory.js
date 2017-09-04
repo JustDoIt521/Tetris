@@ -1,1 +1,0 @@
-squareFactory.js
