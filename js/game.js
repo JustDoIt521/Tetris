@@ -158,12 +158,10 @@ var Game=function(){
 	var init=function(doms){
 		gameDiv=doms.gameDiv;
 		nextDiv=doms.nextDiv;
-		cur=new Square();
-		next=new Square();
+		cur=SquareFactory.prototype.make(2,2);
+		next=SquareFactory.prototype.make(3,3);
 		initDiv(gameDiv,gameData,gameDivs);
 		initDiv(nextDiv,next.data,nextDivs);
-		cur.origin.x=10;
-		cur.origin.y=5;
 		setData();
 		refreshDiv(gameData,gameDivs);
 		refreshDiv(next.data,nextDivs);
