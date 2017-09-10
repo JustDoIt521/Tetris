@@ -229,7 +229,7 @@ var Game=function(){
 		var s=0;
 		s=line*10;
 		score=score+s;
-		scoreDiv.innerHTML+=score;
+		scoreDiv.innerHTML=score;
 	}
 	//
 	var gameover=function(win){
